@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "6260725d9bd326815ebf44a2"
+  },
+  "firstName": "Sarnam",
+  "lastName": "Patel",
+  "email": "spate247@uncc.edu",
+  "password": "$2b$10$vrrildeNVyUFji/yXEOK5uunFTZKp194bNdBxI1R6lT7OQGC01Sla",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6262cd2d85329aeb2b34c99a"
+  },
+  "firstName": "Shreyam",
+  "lastName": "Patel",
+  "email": "shreyampatel22@gmail.com",
+  "password": "$2b$10$9rDIjP.e6IEYMGjVk9/AOurw6yCfvrKhlkzSMf/Js4wGKiZBgZQwO",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6262cdce85329aeb2b34c9a2"
+  },
+  "firstName": "Narendra",
+  "lastName": "Patel",
+  "email": "patelnarendra22@gmail.com",
+  "password": "$2b$10$zSJ9bIVYfLHstVPTpPKqgOdJJNEKtX4vjxueHShGQccYWT0PHP3Vm",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627320a435c0c1b2b3d2664b"
+  },
+  "firstName": "Aaria",
+  "lastName": "Trivedi",
+  "email": "aariatrivedi@gmail.com",
+  "password": "$2b$10$dLQW30vf8zF2KzF8dHWDu.lYqxj.gwfum8yZaKY1u9E13s/LuwYO2",
+  "__v": 0
+}]

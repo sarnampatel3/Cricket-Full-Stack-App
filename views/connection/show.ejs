@@ -1,0 +1,39 @@
+<%- include('../partials/header.ejs')%>
+
+
+   <main>
+    <br><br><br>
+        <h4><%= connection.title%></h4>
+        <small>Posted <%= connection.createdAt%> by <%=connection.host.firstName + ' ' + connection.host.lastName%></small>
+        <br>
+      <div><p>Content: <%= connection.content%></p></div> 
+       <div><p>Where: <%= connection.where%></p></div>
+       <div><p>When: <%= connection.when%></p></div>
+        <div><p>Start time: <%= connection.start%></p></div>
+        <div><p>End time:<%= connection.end%></p></div>
+        <img src="<%=connection.imageURL%>" width="250" height="250"><br>
+        <br>
+        <%if(user == connection.host._id) {%>
+            <form>
+                <button type = "submit" formmethod = "GET" formaction = "/connections/<%= connection._id%>/edit">Edit</button>
+                <button type = "submit" formmethod = "POST" formaction = "/connections/<%= connection._id%>?_method=DELETE">Delete</button>
+    
+            </form>
+        <%} else if(user && user!=connection.host._id){%>
+            <form>
+                <h5>People attending: <%=rsvps%></h5>
+
+                <h3>Are you going? RSVP Now</h3>
+                <button type="submit" formmethod="POST" formaction="/connections/<%= connection._id%>/rsvp"
+                    name="rsvp" value="YES">Yes</button>
+                <button type="submit" formmethod="POST" formaction="/connections/<%= connection._id%>/rsvp"
+                    name="rsvp" value="NO">No</button>
+                <button type="submit" formmethod="POST" formaction="/connections/<%= connection._id%>/rsvp"
+                    name="rsvp" value="MAYBE">Maybe</button>
+            </form>
+            <%}%>
+      
+    </main>
+
+<%- include('../partials/footer.ejs')%>
+

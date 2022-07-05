@@ -1,0 +1,38 @@
+<%- include('../partials/header.ejs')%>
+   <main>
+       
+    <h2> Create a new connection</h2>
+
+    <form method = 'POST' action = '/connections'>
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" name="topic" class = "fixed-width" required><br>
+        <br>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" class = "fixed-width" required><br>
+        <br>
+        <label for="content">Content:</label>
+        <input textarea rows="5" id="content" name="content" class = "fixed-width" required><br>
+        <br>
+        <label for="where">Where:</label>
+        <input type="text" id="where" name="where" class = "fixed-width" required><br>
+        <br>
+        <label for="when">When:</label>
+        <input type="date" id="when" name="when" class = "fixed-width" required><br>
+        <br>
+        <label for="start">Start:</label>
+        <input type="time" id="start" name="start" class = "fixed-width" required><br>
+        <br>
+        <label for="end">End:</label>
+        <input type="time" id="end" name="end" class = "fixed-width" required><br>
+        <br>
+        <label for="imageURL">Image URL:</label>
+        <input type="url" id="imageURL" name="imageURL" required><br>
+        <br>
+        <button>Create Connection</button>
+    </form>
+
+
+
+    </main>
+    <%- include('../partials/footer.ejs')%>
+

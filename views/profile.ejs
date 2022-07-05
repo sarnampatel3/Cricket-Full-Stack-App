@@ -1,0 +1,47 @@
+<%- include('./partials/header.ejs')%>
+<br><br><br><br>
+<h2>Welcome, <%= user.firstName + " " + user.lastName%></h2>
+
+<%if(connections.length) {%>
+    <p>You have created the following connections</p>
+    <%connections.forEach(connection => {%>
+        <a href = '/connections/<%= connection.id%>'><p><%=connection.title%></p></a>
+<%});
+} else {%>
+    <p>You have not created any connections</p>
+<% }%>
+
+<%if(rsvps.length) {%>
+    <p>You have RSVP'd for these connections:</p>
+    <table>
+
+        <%rsvps.forEach(rsvp=> {%>
+            <tr>
+                <td>
+                    <a href='/connections/<%= rsvp.connection._id%>'>
+                        <p>
+                            <%=rsvp.connection.title%>
+                                <%= rsvp.rsvp%>
+                        </p>
+                    </a>
+                </td>
+                <td>
+                    <form><button formaction="/connections/<%= rsvp.connection._id%>/ "
+                            formmethod="GET">Update</button>
+                </td>
+                <td>
+                    <form>
+                        <button
+                            formaction="/connections/<%= rsvp.connection._id%>/rsvp?_method=DELETE"
+                            formmethod="POST">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            <%}); %>
+    </table>
+    <% } else {%>
+        <p>You have not created any RSVP</p>
+        <%}%>
+
+
+<%- include('./partials/footer.ejs')%>

@@ -1,0 +1,117 @@
+html{
+    background-color: silver;
+}
+header, footer {
+    height: 120px;
+}
+
+body{
+   background-color: rgb(241, 193, 241);
+   text-align: center;
+   border-style: solid; 
+   border-color: black;
+   width: 700px;
+   padding: 50px;
+   margin: auto;
+}
+
+.logo{
+    height: 134px;
+    width: 130px;
+    float: left;
+}
+
+.heading{
+    position: relative;
+    top: 5px;
+    left: 10px;
+    float: left;
+    text-align: center;
+}
+
+.navigation{
+    background-color: black;
+    float: left;
+}
+
+.navigation a{
+    float: left;
+    color: blue;
+    text-align: center;
+    padding: 14px 10px;
+    font-size: 20px;
+    position: relative;
+    border-style:solid;
+    border-color: black;
+    background-color: rgb(228, 192, 198)
+}
+
+h1 {
+	color: blue;
+	text-align: center;
+}
+
+p{
+    width: auto;
+}
+
+.mainImg{
+    height: 250px;
+    width: 375px;
+}
+
+#insta{
+    height: 40px;
+    width: 50px;
+    float: right;
+}
+
+#fb{
+    height: 40px;
+    width: 50px;
+    float: right;
+}
+
+
+.video{
+    height: 400px;
+    width: 600px;
+}
+
+.ground{
+    height: 200px;
+    width: 400px;
+    float: left;
+}
+
+#connection{
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.fixed-width{
+    width: 300px;
+}
+
+.success {
+    background: rgba(108, 192, 112, 0.7);
+    color: #ffffff;
+    bottom: 20px;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 95px;
+}
+
+.error {
+    background: rgba(1225, 102, 51, 0.7);
+    color: #fff;
+    bottom: 20px;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 95px;
+}
